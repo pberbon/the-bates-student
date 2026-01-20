@@ -15,10 +15,10 @@ export default function Header() {
             The Bates Student
           </Link>
           
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-6">
             <Link 
               to="/news" 
-              className={`font-paragraph text-base transition-colors ${
+              className={`font-paragraph text-base transition-colors whitespace-nowrap ${
                 isActive('/news') ? 'text-primary font-semibold' : 'text-secondary-foreground hover:text-primary'
               }`}
             >
@@ -26,7 +26,7 @@ export default function Header() {
             </Link>
             <Link 
               to="/features" 
-              className={`font-paragraph text-base transition-colors ${
+              className={`font-paragraph text-base transition-colors whitespace-nowrap ${
                 isActive('/features') ? 'text-primary font-semibold' : 'text-secondary-foreground hover:text-primary'
               }`}
             >
@@ -34,7 +34,7 @@ export default function Header() {
             </Link>
             <Link 
               to="/forum" 
-              className={`font-paragraph text-base transition-colors ${
+              className={`font-paragraph text-base transition-colors whitespace-nowrap ${
                 isActive('/forum') ? 'text-primary font-semibold' : 'text-secondary-foreground hover:text-primary'
               }`}
             >
@@ -42,7 +42,7 @@ export default function Header() {
             </Link>
             <Link 
               to="/arts" 
-              className={`font-paragraph text-base transition-colors ${
+              className={`font-paragraph text-base transition-colors whitespace-nowrap ${
                 isActive('/arts') ? 'text-primary font-semibold' : 'text-secondary-foreground hover:text-primary'
               }`}
             >
@@ -50,7 +50,7 @@ export default function Header() {
             </Link>
             <Link 
               to="/sports" 
-              className={`font-paragraph text-base transition-colors ${
+              className={`font-paragraph text-base transition-colors whitespace-nowrap ${
                 isActive('/sports') ? 'text-primary font-semibold' : 'text-secondary-foreground hover:text-primary'
               }`}
             >
@@ -58,7 +58,7 @@ export default function Header() {
             </Link>
             <Link 
               to="/newsletters" 
-              className={`font-paragraph text-base transition-colors ${
+              className={`font-paragraph text-base transition-colors whitespace-nowrap ${
                 isActive('/newsletters') ? 'text-primary font-semibold' : 'text-secondary-foreground hover:text-primary'
               }`}
             >
@@ -66,7 +66,7 @@ export default function Header() {
             </Link>
             <Link 
               to="/print-issues" 
-              className={`font-paragraph text-base transition-colors ${
+              className={`font-paragraph text-base transition-colors whitespace-nowrap ${
                 isActive('/print-issues') ? 'text-primary font-semibold' : 'text-secondary-foreground hover:text-primary'
               }`}
             >
@@ -74,7 +74,7 @@ export default function Header() {
             </Link>
             <Link 
               to="/about" 
-              className={`font-paragraph text-base transition-colors ${
+              className={`font-paragraph text-base transition-colors whitespace-nowrap ${
                 isActive('/about') ? 'text-primary font-semibold' : 'text-secondary-foreground hover:text-primary'
               }`}
             >
