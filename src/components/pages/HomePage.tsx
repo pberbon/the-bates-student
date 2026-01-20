@@ -259,7 +259,13 @@ export default function HomePage() {
                               {article.authorName && (
                                 <>
                                   <span className="w-1 h-1 rounded-full bg-primary" />
-                                  <span>{article.authorName}</span>
+                                  <Link 
+                                    to={`/author/${encodeURIComponent(article.authorName)}`}
+                                    className="text-primary hover:text-deepbrown transition-colors"
+                                    onClick={(e) => e.stopPropagation()}
+                                  >
+                                    {article.authorName}
+                                  </Link>
                                 </>
                               )}
                             </div>

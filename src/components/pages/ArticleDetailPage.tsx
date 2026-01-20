@@ -78,7 +78,14 @@ export default function ArticleDetailPage() {
 
               <div className="flex items-center gap-6 font-paragraph text-base text-secondary-foreground/70 mb-8 pb-8 border-b border-deepbrown/20">
                 {article.authorName && (
-                  <span className="font-semibold text-deepbrown">By {article.authorName}</span>
+                  <span className="font-semibold text-deepbrown">
+                    By <Link 
+                      to={`/author/${encodeURIComponent(article.authorName)}`}
+                      className="text-primary hover:text-deepbrown transition-colors underline"
+                    >
+                      {article.authorName}
+                    </Link>
+                  </span>
                 )}
                 {article.publicationDate && (
                   <span>{format(new Date(article.publicationDate), 'MMMM d, yyyy')}</span>
