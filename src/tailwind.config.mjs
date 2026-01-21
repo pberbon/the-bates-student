@@ -24,12 +24,12 @@ export default {
             },
             colors: {
                 deepbrown: '#3B2A20',
-                foreground: '#2B1F17',
+                foreground: '#8B2635',
                 destructive: '#DF3131',
                 destructiveforeground: '#FFFFFF',
                 background: '#F9F6F1',
                 secondary: '#F9F6F1',
-                'secondary-foreground': '#2B1F17',
+                'secondary-foreground': '#8B2635',
                 'primary-foreground': '#F9F6F1',
                 primary: '#8B2635'
             },
