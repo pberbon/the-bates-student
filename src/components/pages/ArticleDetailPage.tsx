@@ -67,7 +67,7 @@ export default function ArticleDetailPage() {
               </Link>
 
               {article.sectionCategory && (
-                <span className="inline-block font-paragraph text-sm text-primary uppercase tracking-wider mb-4">
+                <span className="inline-block font-paragraph text-sm text-primary uppercase tracking-wider mb-4 ml-8">
                   {article.sectionCategory}
                 </span>
               )}
