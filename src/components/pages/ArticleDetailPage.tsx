@@ -58,19 +58,21 @@ export default function ArticleDetailPage() {
             </div>
           ) : (
             <article className="max-w-4xl mx-auto">
-              <Link 
-                to="/news"
-                className="inline-flex items-center gap-2 font-paragraph text-primary hover:text-deepbrown transition-colors mb-8"
-              >
-                <ArrowLeft size={20} />
-                Back to Articles
-              </Link>
+              <div className="flex items-center justify-between mb-8">
+                <Link 
+                  to="/news"
+                  className="inline-flex items-center gap-2 font-paragraph text-primary hover:text-deepbrown transition-colors"
+                >
+                  <ArrowLeft size={20} />
+                  Back to Articles
+                </Link>
 
-              {article.sectionCategory && (
-                <span className="inline-block font-paragraph text-sm text-primary uppercase tracking-wider mb-4 ml-8">
-                  {article.sectionCategory}
-                </span>
-              )}
+                {article.sectionCategory && (
+                  <span className="inline-block font-paragraph text-sm text-primary uppercase tracking-wider">
+                    {article.sectionCategory}
+                  </span>
+                )}
+              </div>
 
               <h1 className="font-heading text-4xl lg:text-6xl text-deepbrown mb-6 leading-tight">
                 {article.articleTitle}
