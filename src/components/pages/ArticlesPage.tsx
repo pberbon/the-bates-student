@@ -79,7 +79,7 @@ export default function ArticlesPage() {
         </div>
 
         {/* Section Filter */}
-        <div className="mb-12 flex flex-wrap gap-3">
+        <div className="mb-12 flex flex-wrap gap-3 justify-end">
           <button
             onClick={() => handleSectionChange('All')}
             className={`font-paragraph px-6 py-2 border-2 transition-all ${
