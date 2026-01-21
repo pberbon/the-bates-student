@@ -67,7 +67,6 @@ export default function ArticlesPage() {
   return (
     <div className="min-h-screen bg-secondary">
       <Header />
-      
       <main className="w-full max-w-[120rem] mx-auto px-6 lg:px-12 py-16">
         <div className="mb-12">
           <h1 className="font-heading text-5xl lg:text-6xl text-primary mb-6">
@@ -78,8 +77,7 @@ export default function ArticlesPage() {
           </p>
         </div>
 
-        {/* Section Filter */}
-        <div className="mb-12 flex flex-wrap gap-3 justify-end">
+        <div className="mb-12 flex flex-wrap gap-3 justify-start">
           <button
             onClick={() => handleSectionChange('All')}
             className={`font-paragraph px-6 py-2 border-2 transition-all ${
@@ -105,6 +103,7 @@ export default function ArticlesPage() {
           ))}
         </div>
 
+        {/* Section Filter */}
         {/* Articles Grid */}
         <div className="min-h-[600px]">
           {isLoading && skip === 0 ? null : (
@@ -185,7 +184,6 @@ export default function ArticlesPage() {
           </div>
         )}
       </main>
-
       <Footer />
     </div>
   );
